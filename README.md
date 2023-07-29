@@ -21,5 +21,6 @@ Main design created by Angelo Ribero
 ## Development plan
 
 - [x] initialize project
-- [ ] add style colors and fonts to config
+- [x] add style colors and fonts to config
 - [ ] uikit
+  - [ ] Typography component with all varinats from figma
