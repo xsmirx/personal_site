@@ -1,3 +1,4 @@
+import {Footer, Header, Providers} from '@/components'
 import type {Metadata} from 'next'
 import {DM_Sans, Outfit} from 'next/font/google'
 import './globals.css'
@@ -23,8 +24,19 @@ export const metadata: Metadata = {
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
-    <html lang="en" className={`${outfit.variable} ${dmSans.variable}`}>
-      <body>{children}</body>
+    <html
+      lang="en"
+      className={`${outfit.variable} ${dmSans.variable} antialiased`}
+    >
+      <body>
+        <Providers>
+          <div className="relativ min-h-screen flex flex-col">
+            <Header />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </div>
+        </Providers>
+      </body>
     </html>
   )
 }
