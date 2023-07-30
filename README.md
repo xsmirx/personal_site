@@ -22,5 +22,8 @@ Main design created by Angelo Ribero
 
 - [x] initialize project
 - [x] add style colors and fonts to config
-- [ ] uikit
-  - [ ] Typography component with all varinats from figma
+- [x] Typography component with all varinats from figma
+- [ ] Site layout
+  - [ ] theme provider
+  - [ ] header
+  - [ ] footer
