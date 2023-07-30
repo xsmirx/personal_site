@@ -1,11 +1,19 @@
-import './globals.css'
 import type {Metadata} from 'next'
-import {Outfit} from 'next/font/google'
+import {DM_Sans, Outfit} from 'next/font/google'
+import './globals.css'
 
 const outfit = Outfit({
   display: 'swap',
+  weight: ['400', '500', '600'],
   subsets: ['latin'],
   variable: '--font-outfit',
+})
+
+const dmSans = DM_Sans({
+  display: 'swap',
+  weight: ['400', '500', '700'],
+  subsets: ['latin'],
+  variable: '--font-dm-sans',
 })
 
 export const metadata: Metadata = {
@@ -15,7 +23,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
-    <html lang="en" className={outfit.variable}>
+    <html lang="en" className={`${outfit.variable} ${dmSans.variable}`}>
       <body>{children}</body>
     </html>
   )

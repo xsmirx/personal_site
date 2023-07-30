@@ -52,7 +52,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ['var(--font-outfit)'],
+        heading: ['var(--font-outfit)'],
+        body: ['var(--font-dm-sans)'],
       },
     },
   },

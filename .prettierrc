@@ -6,6 +6,7 @@
   "bracketSpacing": false,
   "arrowParens": "avoid",
 
+  "importOrder": ["^@/components/(.*)$", "^@/utils/(.*)$", "^[./]"],
   "importOrderSeparation": false,
   "importOrderSortSpecifiers": true,
   "plugins": [
