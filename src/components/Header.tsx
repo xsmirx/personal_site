@@ -1,7 +1,6 @@
 import {cn} from '@/utils'
-import Link from 'next/link'
 import {FC} from 'react'
-import {Typography} from '.'
+import {AppLink, Typography} from '.'
 
 interface Props {
   className?: string
@@ -15,11 +14,11 @@ export const Header: FC<Props> = ({className}) => {
         className,
       )}
     >
-      <Link href="/">
+      <AppLink href="/">
         <Typography tag="span" variant={'hero'}>
           Header
         </Typography>
-      </Link>
+      </AppLink>
     </header>
   )
 }

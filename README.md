@@ -24,6 +24,8 @@ Main design created by Angelo Ribero
 - [x] add style colors and fonts to config
 - [ ] UIKit
   - [x] Typography component with all varinats from figma
+  - [x] Button
+  - [x] Link
   - [ ] DropdownMenu component
 - [ ] Site layout
   - [x] theme provider
