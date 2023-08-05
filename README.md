@@ -23,12 +23,13 @@ Main design created by Angelo Ribero
 - [x] initialize project
 - [x] add style colors and fonts to config
 - [ ] UIKit
+  - [ ] StoryBook
   - [x] Typography component with all varinats from figma
   - [x] Button
   - [x] Link
-  - [ ] DropdownMenu component
+  - [x] DropdownMenu component
 - [ ] Site layout
   - [x] theme provider
-    - [ ] theme select from DropdownMenu component
+    - [x] theme select from DropdownMenu component
   - [ ] header
   - [ ] footer
