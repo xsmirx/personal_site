@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary */
+  --primary-darkest: 23 15 46;
+  --primary-darker: 49 33 99;
+  --primary-dark: 85 49 167;
+  --primary-default: 146 81 247;
+  --primary-light: 198 150 252;
+  --primary-lighter: 239 226 249;
+  --primary-lightest: 248 242 252;
+
+  /* Secondary */
+  --secondary-darker: 31 35 71;
+  --secondary-dark: 42 51 126;
+  --secondary-default: 81 108 247;
+  --secondary-light: 149 170 251;
+  --secondary-lighter: 225 231 254;
+  --secondary-lightest: 245 247 255;
+
+  /* Gray */
+  --gray-darkest: 36 36 58;
+  --gray-darker: 46 46 72;
+  --gray-dark: 71 81 107;
+  --gray-default: 121 129 154;
+  --gray-light: 172 177 195;
+  --gray-lighter: 217 223 232;
+  --gray-lightest: 226 230 238;
+  --gray-lightest-2: 247 249 252;
+
+  /* Status */
+  --info: 34 195 241;
+  --success-light: 231 250 229;
+  --success: 74 192 111;
+  --success-dark: 31 92 67;
+  --warning-light: 254 252 191;
+  --warning: 244 206 16;
+  --warning-dark: 133 113 41;
+  --error-light: 229 62 62;
+  --error: 197 48 48;
+  --error-dark: 155 44 44;
+}

@@ -1,21 +1,7 @@
 import {Footer, Header, Providers} from '@/components'
 import type {Metadata} from 'next'
-import {DM_Sans, Outfit} from 'next/font/google'
-import './globals.css'
-
-const outfit = Outfit({
-  display: 'swap',
-  weight: ['400', '500', '600'],
-  subsets: ['latin'],
-  variable: '--font-outfit',
-})
-
-const dmSans = DM_Sans({
-  display: 'swap',
-  weight: ['400', '500', '700'],
-  subsets: ['latin'],
-  variable: '--font-dm-sans',
-})
+import '@/style/globals.css'
+import { dmSans, outfit } from '@/style/fonts'
 
 export const metadata: Metadata = {
   title: 'Ivan Smirnov',
