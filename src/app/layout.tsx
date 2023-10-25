@@ -1,7 +1,7 @@
 import {Footer, Header, Providers} from '@/components'
 import type {Metadata} from 'next'
+import {dmSans, outfit} from '@/style/fonts'
 import '@/style/globals.css'
-import { dmSans, outfit } from '@/style/fonts'
 
 export const metadata: Metadata = {
   title: 'Ivan Smirnov',
@@ -14,13 +14,11 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
       lang="en"
       className={`${outfit.variable} ${dmSans.variable} antialiased`}
     >
-      <body>
+      <body className="min-h-screen bg-white text-gray-darker dark:bg-gray-darkest dark:text-gray-lightest">
         <Providers>
-          <div className="relativ min-h-screen flex flex-col bg-white dark:bg-gray-darkest">
-            <Header />
-            <main className="flex-1">{children}</main>
-            <Footer />
-          </div>
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
         </Providers>
       </body>
     </html>

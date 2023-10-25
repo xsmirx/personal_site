@@ -11,7 +11,7 @@ export const Header: FC<Props> = ({className}) => {
   return (
     <header
       className={cn(
-        'flex flex-row justify-between container mx-auto sticky',
+        'container sticky mx-auto flex flex-row justify-between',
         className,
       )}
     >

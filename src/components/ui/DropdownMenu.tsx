@@ -15,7 +15,7 @@ export const DropdownMenuTrigger = forwardRef<
       asChild={asChild}
       className={cn(
         {
-          'ring-offset-white dark:ring-offset-gray-darkest focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 rounded-md':
+          'rounded-md ring-offset-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 dark:ring-offset-gray-darkest':
             !asChild,
         },
         className,
@@ -37,7 +37,7 @@ export const DropdownMenuContent = forwardRef<
     <DropdownMenuPrimitive.Portal>
       <DropdownMenuPrimitive.Content
         className={cn(
-          'z-50 min-w-[8rem] overflow-hidden rounded-md border border-gray-lightest dark:border-gray bg-white dark:bg-gray-darker p-1 text-gray-darker dark:text-gray-lighter shadow-md animate-in data-[side=bottom]:slide-in-from-top-1 data-[side=left]:slide-in-from-right-1 data-[side=right]:slide-in-from-left-1 data-[side=top]:slide-in-from-bottom-1',
+          'animate-in data-[side=bottom]:slide-in-from-top-1 data-[side=left]:slide-in-from-right-1 data-[side=right]:slide-in-from-left-1 data-[side=top]:slide-in-from-bottom-1 z-50 min-w-[8rem] overflow-hidden rounded-md border border-gray-lightest bg-white p-1 text-gray-darker shadow-md dark:border-gray dark:bg-gray-darker dark:text-gray-lighter',
           className,
         )}
         ref={ref}
@@ -57,7 +57,7 @@ export const DropdownMenuItem = forwardRef<
   return (
     <DropdownMenuPrimitive.Item
       className={cn(
-        'relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none focus:bg-gray-lightest dark:focus:bg-gray-dark data-[disabled]:pointer-events-none data-[disabled]:opacity-50',
+        'relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none focus:bg-gray-lightest data-[disabled]:pointer-events-none data-[disabled]:opacity-50 dark:focus:bg-gray-dark',
         className,
       )}
       ref={ref}
