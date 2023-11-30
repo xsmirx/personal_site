@@ -5,5 +5,5 @@ export {
   DropdownMenuTrigger,
   DropdownMenuContent,
 } from './DropdownMenu'
-export {AppLink} from './Link'
+export {linkVariants} from './linkVariants'
 export {textVariants} from './textVariants'
