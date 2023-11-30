@@ -1,12 +1,14 @@
 import {Meta, StoryObj} from '@storybook/react'
 import {Button} from './Button'
 
-const meta = {
+const meta: Meta<typeof Button> = {
   title: 'UI Components/Button',
   component: Button,
   tags: ['autodocs'],
   args: {
     children: 'Button',
+    variant: 'primary',
+    size: 'md',
   },
   argTypes: {
     asChild: {
@@ -20,9 +22,13 @@ const meta = {
       },
     },
     variant: {
+      options: ['primary', 'secondary', 'destructive', 'outline', 'ghost'],
+      control: {type: 'select'},
       description: 'What variant should the button be?',
     },
     size: {
+      options: ['xl', 'lg', 'md', 'sm', 'icon'],
+      control: {type: 'select'},
       description: 'How large should the button be?',
     },
     disabled: {control: 'boolean'},
@@ -31,7 +37,7 @@ const meta = {
       description: 'Button text',
     },
   },
-} satisfies Meta<typeof Button>
+}
 
 export default meta
 type Story = StoryObj<typeof meta>
