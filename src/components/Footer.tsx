@@ -1,6 +1,6 @@
 import {cn} from '@/utils'
 import {FC} from 'react'
-import {Typography} from '.'
+import {textVariants} from './ui'
 
 interface Props {
   className?: string
@@ -9,9 +9,7 @@ interface Props {
 export const Footer: FC<Props> = ({className}) => {
   return (
     <footer className={cn('container mx-auto py-4', className)}>
-      <Typography variant={'hero'} tag="span">
-        Footer
-      </Typography>
+      <span className={textVariants({variant: 'hero'})}>Footer</span>
     </footer>
   )
 }

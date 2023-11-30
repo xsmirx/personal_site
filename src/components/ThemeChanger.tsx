@@ -9,7 +9,7 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from '.'
+} from './ui'
 
 export const ThemeChanger: FC = () => {
   const {setTheme} = useTheme()

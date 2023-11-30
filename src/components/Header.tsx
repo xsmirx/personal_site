@@ -1,7 +1,8 @@
 import {cn} from '@/utils'
+import Link from 'next/link'
 import {FC} from 'react'
-import {AppLink, Typography} from '.'
 import {ThemeChanger} from './ThemeChanger'
+import {linkVariants, textVariants} from './ui'
 
 interface Props {
   className?: string
@@ -9,18 +10,15 @@ interface Props {
 
 export const Header: FC<Props> = ({className}) => {
   return (
-    <header
-      className={cn(
-        'container sticky mx-auto flex flex-row justify-between',
-        className,
-      )}
-    >
-      <AppLink href="/">
-        <Typography tag="span" variant={'hero'}>
-          Header
-        </Typography>
-      </AppLink>
-      <ThemeChanger />
+    <header className={cn('sticky top-0', className)}>
+      <div className="container mx-auto flex flex-row items-center justify-between py-2">
+        <Link href="/" className={linkVariants()}>
+          <span className={textVariants({variant: 'h1_bold'})}>
+            Ivan Smirnov
+          </span>
+        </Link>
+        <ThemeChanger />
+      </div>
     </header>
   )
 }

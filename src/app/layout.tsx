@@ -12,12 +12,12 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html
       lang="en"
-      className={`${outfit.variable} ${dmSans.variable} antialiased`}
+      className={`${outfit.variable} ${dmSans.variable} h-full antialiased`}
     >
-      <body className="min-h-screen bg-white text-gray-darker dark:bg-gray-darkest dark:text-gray-lightest">
+      <body className="relative flex min-h-full flex-col bg-white text-gray-darker dark:bg-gray-darkest dark:text-gray-lightest">
         <Providers>
           <Header />
-          <main className="flex-1">{children}</main>
+          <div className="flex-1">{children}</div>
           <Footer />
         </Providers>
       </body>
